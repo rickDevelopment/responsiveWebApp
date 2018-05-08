@@ -8,6 +8,30 @@
     <title>Brighton Times</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" media="screen and (max-width:450px" type="text/css" href="below450px.css">
+
+    <style type="text/css">
+
+      @media screen and (min-width: 700px){
+          .container{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .hero,.news, .scores, .weather{
+          width:50%;
+        }
+      }
+
+      @media and screen(min-width: 800px){
+        .container{
+
+        }
+      }
+
+
+    </style>
   </head>
   <body>
 
@@ -102,7 +126,7 @@
                 <td>2</td>
                 <td>Foxes</td>
               </tr>
-              
+
             </tbody>
           </table>
         </section>
