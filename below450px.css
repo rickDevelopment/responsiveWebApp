@@ -1,8 +1,16 @@
+/*.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}*/
+
+
 .header__logo {
   height: 50px;
   margin-right: 1em;
   vertical-align: top;
-  margin-top: 12px;
+  margin-top: 6px;
+  margin-bottom: 6px
 }
 
 .header__title {
@@ -11,4 +19,18 @@
   margin: 0.5em 0.25em;
   display: inline-block;
   color: #212121;
+}
+/* Hide nav bar*/
+nav{
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-300px,0);
+  transition: transform 0.3s ease;
+
+}
+
+/*Makes the nav bar visible again*/
+nav.open{
+  transform: translate(0,0);
 }
